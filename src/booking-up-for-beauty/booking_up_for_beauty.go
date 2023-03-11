@@ -26,7 +26,6 @@ func IsAfternoonAppointment(date string) bool {
 func Description(date string) string {
 	var t, _ = time.Parse("1/2/2006 15:04:05", date)
 	return t.Format("You have an appointment on Monday, January 2, 2006, at 15:04.")
-	return Schedule(date).Format("You have an appointment on Monday")
 }
 
 // AnniversaryDate returns a Time with this year's anniversary.
