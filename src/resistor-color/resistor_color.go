@@ -1,6 +1,6 @@
 package resistorcolor
 
-var colors = map[string]int{
+var colorMap = map[string]int{
 	"black":  0,
 	"brown":  1,
 	"red":    2,
@@ -31,5 +31,5 @@ func Colors() []string {
 
 // ColorCode returns the resistance value of the given color.
 func ColorCode(color string) int {
-	return colors[color]
+	return colorMap[color]
 }
